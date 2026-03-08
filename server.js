@@ -1,12 +1,12 @@
 import express from "express"
-import dotenv from "dotenv"
+import "dotenv/config"
 import cors from "cors"
 
 import logger from "./middleware/logger.js"
 import validateEnrollment from "./middleware/validateEnrollment.js"
 import courseRoutes from "./routes/courses.js"
 
-dotenv.config()
+//dotenv.config()
 const app = express()
 
 app.use(cors())
